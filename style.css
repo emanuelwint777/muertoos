@@ -1,0 +1,248 @@
+/* Styles By Agustin :D */
+
+/* latin-ext */
+@font-face {
+  font-family: 'Bubbler One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bubbler One'), local('BubblerOne'), url(https://fonts.gstatic.com/s/bubblerone/v4/tiAxK_A8SViEcY0M590QMCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bubbler One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bubbler One'), local('BubblerOne'), url(https://fonts.gstatic.com/s/bubblerone/v4/tiAxK_A8SViEcY0M590QMI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background:url(https://png.pngtree.com/background/20230511/original/pngtree-mexican-day-of-the-dead-flat-picture-image_2501799.jpg), tomato;
+  background-size:cover;
+  background-attachment:fixed;
+  font-family: 'Bubbler One', sans-serif;
+  font-weight:bold;
+}
+
+header {
+  width:100%;
+}
+
+.navegacion {
+  width:100%;
+  background:rgba(0,0,0,.6);
+  z-index:999999999;
+  transition:border 0.1ms, box-shadow 1s;
+}
+
+.navegacion nav {
+  width:100%;
+  text-align:right;
+  margin:auto;
+}
+
+.navegacion nav img {
+  width:50px;
+  float:left;
+  position:absolute;
+  top:12px;
+  left:10px;
+}
+
+.navegacion nav h2 {
+  float:left;
+  margin-top:22px;
+  margin-bottom:22px;
+  margin-left:70px;
+  color:#fff;
+}
+
+.boton-menu {
+  display:none;
+  text-align:left;
+}
+
+.boton-menu span {
+  color:tomato;
+  font-size:25px;
+  cursor:pointer;
+}
+
+.menu {
+  list-style:none;
+  width:100%;
+}
+
+.menu li {
+  display:inline-block;
+}
+
+.menu li a {
+  display:block;
+  padding:29px 0;
+  color:#fff;
+  font-weight:400;
+  font-size:15px;
+  text-decoration:none;
+  position:relative;
+  transition:all 0.2s ease-in;
+  margin:0 30px;
+  text-transform:uppercase;
+}
+
+.menu li a:hover {
+  color:#ff4c00;
+}
+
+.articulo-y-aside {
+  display:inline-block;
+  background:rgba(0,0,0,.8);
+  color:#fff;
+  width:80%;
+  padding:20px;
+  margin:50px auto;
+  transition:all 1s;
+}
+
+.articulo {
+  width:65%;
+  padding:20px;
+  float:left;
+}
+
+.articulo article {
+  margin:30px 0;
+}
+
+.aside {
+  width:25%;
+  padding:20px;
+  float:right;
+}
+
+.aside aside {
+  margin:30px 0;
+}
+
+.contenedor-cajas .cajas {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.contenedor-cajas article {
+  margin:15px;
+}
+
+.contenedor-cajas img {
+  width:100%;
+  max-width:280px;
+  min-height:175px;
+}
+
+.contenedor-cajas h1 {
+  width:100%;
+  max-width:280px;
+  min-height:175px;
+}
+
+.contenedor-cajas p {
+  width:100%;
+  max-width:280px;
+  min-height:175px;
+}
+
+.boton-subir {
+  position:fixed;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(0,0,0,.3);
+  padding-top:10px;
+  padding-left:20px;
+  padding-right:20px;
+  color:#fff;
+  border-radius:100px 100px 0 0;
+  display:none;
+  cursor:pointer;
+  z-index:9999;
+}
+
+.boton-subir:hover {
+  background:rgba(0,0,0,.8);
+}
+
+footer {
+  background:rgba(0,0,0,.8);
+  padding:10px;
+  text-align:center;
+  color:#fff;
+  position:relative;
+  bottom:0;
+  clear:both;
+}
+
+/* Inicio del Responsive Design */
+
+@media screen and (max-width:500px) {
+  .articulo {
+    float:none;
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .aside {
+    float:none;
+    width:100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .boton-menu {
+    display:inline-block;
+    width:100%;
+    margin:auto;
+    padding:10px 0;
+    padding-left:20px;
+  }
+
+  .navegacion nav {
+    position:absolute;
+    background:rgba(0,0,0,.6);
+    width:80%;
+    height:100%;
+    left:-100%;
+    text-align:center;
+    border-right:10px solid rgba(186,42,16,.5);
+  }
+
+  .navegacion nav img {
+    display:none;
+  }
+
+  .navegacion nav h2 {
+    display:none;
+  }
+
+  .menu li {
+    display:block;
+  }
+
+  .menu li a {
+    color:#fff;
+    margin:0;
+  }
+
+  .articulo-y-aside {
+    width:90%;
+  }
+}
+
+/* Fin del Responsive Design */
